@@ -72,7 +72,7 @@ eventSchema.pre('save', function () {
     // Note: next() is optional in Mongoose 5.x+ for synchronous hooks
 });
 
-//Proper helper wrote by myself
+//Proper helper written by myself
 function generateSlug(title: string) {
     return title
         .toLowerCase()
