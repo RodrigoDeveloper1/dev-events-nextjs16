@@ -37,7 +37,7 @@ const eventSchema = new Schema<IEvent>(
     audience: { type: String, required: [true, 'Audience is required'] },
     agenda: { type: [String], required: [true, 'Agenda is required'] },
     organizer: { type: String, required: [true, 'Organizer is required'] },
-    tags: { type: [String], required: [true, 'Tags is required'] },
+    tags: { type: [String], required: [true, 'Tags are required'] },
   },
   {
     timestamps: true,
