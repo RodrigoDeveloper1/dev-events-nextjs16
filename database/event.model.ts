@@ -69,10 +69,10 @@ eventSchema.pre('save', function () {
     this.time = this.time.trim();
   }
 
-  //next(); According to ChatGPT I am ignoring this function calling for now
+    // Note: next() is optional in Mongoose 5.x+ for synchronous hooks
 });
 
-//Proper helper wrote by myself
+//Proper helper written by myself
 function generateSlug(title: string) {
     return title
         .toLowerCase()
