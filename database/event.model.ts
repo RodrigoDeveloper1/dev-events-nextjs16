@@ -51,7 +51,7 @@ const eventSchema = new Schema<IEvent>(
  * 3. Ensuring consistent time format.
  */
 eventSchema.pre('save', function () {
-  // Generate slug if title is modified
+  // Generate slug if the title is modified
   if (this.isModified('title')) {
     this.slug = generateSlug(this.title);
   }
